@@ -1,12 +1,12 @@
 /*
- * This program seaches for thru SQL statements from standard imput
+ * This program seaches for thru SQL statements from standard input
  * and finds "CREATE TABLE `tablename`" using the first argument as
  * the tablename and outputs the full SQL statement.
  *
  * Creation Date: December 13th, 2013
  * Author: John Pruett
  *
- * The program igores comments in slash-asterist and double-dash format.
+ * The program ignores comments in slash-asterisk and double-dash format.
  *
  * Example CREATE TABLE statement:
  *
