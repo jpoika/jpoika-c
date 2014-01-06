@@ -35,15 +35,13 @@
 #define BUFMAXSIZE 16384  /* 16K */
 #define BUFSHIFTSIZE 4096   /* Shift buffer by this amount */
 #define BUFCUTOFF BUFMAXSIZE - BUFSHIFTSIZE
-#define TRUE -1
-#define FALSE 0
 #define NAMESIZE 65
 #define TABLESIZE "%65s"
 #define SEARCHSIZE 128
 #define NEWLINE '\n'
 #define QUOTE '\''
 
-typedef enum { false, true } bool;
+typedef enum { FALSE, TRUE } bool;
 
 char buffer[BUFMAXSIZE+1]=""; /* Includes the last 0 filled character */
 int  bufbegin=0;              /* Begin at zero */
@@ -173,7 +171,7 @@ void searchbuffer()
 /* Run the program..... */
 int main(int argc, char *argv[])
 {  
-  bool runprogram=true;
+  bool runprogram=TRUE;
   char n;
   if(argc==2)
   {
@@ -184,7 +182,7 @@ int main(int argc, char *argv[])
   else
   {
     printf ("Usage %s tablename. < file\n",argv[0]);
-    runprogram=false;
+    runprogram=FALSE;
   } 
 
   /* Read characters into buffer and write characters from buffer. */
